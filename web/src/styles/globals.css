@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-stone-800 text-stone-50;
+}
+
+.col {
+  @apply flex flex-col;
+}
+
+.row {
+  @apply flex flex-row;
+}
+
+.center {
+  @apply items-center;
+}
+
+h1 {
+  @apply text-5xl font-bold;
+}
+
+.subtitle {
+  @apply text-stone-300;
+}
+
+button {
+  @apply cursor-pointer rounded-sm border-2 border-transparent px-4 py-1.5 font-bold uppercase shadow-sm transition-colors;
+}
+
+button.primary {
+  @apply bg-orange-700 hover:bg-orange-800 hover:text-orange-50;
+}
+
+header {
+  @apply col gap-2;
+}
+
+dialog:modal {
+  @apply bg-red-100 backdrop-blur-sm backdrop-brightness-75;
+}
